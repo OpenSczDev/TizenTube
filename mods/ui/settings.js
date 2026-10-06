@@ -237,6 +237,35 @@ export default function modernUI(update, parameters) {
                     value: 'enableHideEndScreenCards'
                 },
                 {
+                    name: t('settings.options.misc.options.skipWatchedAutoplay.title'),
+                    icon: 'SKIP_NEXT',
+                    value: null,
+                    menuId: 'tt-skip-watched-autoplay-settings',
+                    options: [
+                        {
+                            name: t('settings.options.misc.options.skipWatchedAutoplay.enable'),
+                            icon: 'SKIP_NEXT',
+                            value: 'enableSkipWatchedAutoplay'
+                        },
+                        {
+                            name: t('settings.options.misc.options.skipWatchedAutoplay.threshold.title'),
+                            value: null,
+                            menuId: 'tt-skip-watched-autoplay-threshold',
+                            menuHeader: {
+                                title: t('settings.options.misc.options.skipWatchedAutoplay.threshold.title'),
+                                subtitle: t('settings.options.misc.options.skipWatchedAutoplay.threshold.subtitle')
+                            },
+                            options: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100].map((percent) => {
+                                return {
+                                    name: `${percent}%`,
+                                    key: 'skipWatchedAutoplayThreshold',
+                                    value: percent
+                                }
+                            })
+                        }
+                    ]
+                },
+                {
                     name: t('settings.options.misc.options.youThereRenderer'),
                     icon: 'HELP',
                     value: 'enableYouThereRenderer'

@@ -43,6 +43,8 @@ const defaultConfig = {
   hideWatchedVideosThreshold: 80,
   hideWatchedVideosPages: [],
   enableHideEndScreenCards: false,
+  enableSkipWatchedAutoplay: false,
+  skipWatchedAutoplayThreshold: 80,
   enableYouThereRenderer: true,
   lastAnnouncementCheck: 0,
   enableScreenDimming: false,

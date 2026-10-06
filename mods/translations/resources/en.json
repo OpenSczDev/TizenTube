@@ -44,6 +44,14 @@
                 "title": "Miscellaneous Settings",
                 "options": {
                     "endScreenCards": "Hide End Screen Cards",
+                    "skipWatchedAutoplay": {
+                        "title": "Skip Watched Videos in Autoplay",
+                        "enable": "Enable Skip Watched Videos in Autoplay",
+                        "threshold": {
+                            "title": "Watched Threshold",
+                            "subtitle": "Videos watched beyond this percentage are skipped when autoplaying"
+                        }
+                    },
                     "youThereRenderer": "Enable 'Are you still watching?' Renderer",
                     "paidPromoOverlay": "Enable 'Includes paid promotion' Overlay",
                     "whosWatching": {
